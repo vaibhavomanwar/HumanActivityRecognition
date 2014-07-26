@@ -34,6 +34,8 @@ The dataset contains following files.
 	
 ## Script
 The script 'run_analysis.R' generates tidy data from original raw dataset. First of all training and test files are read and merged producing a big dataset. The feature descriptions from 'data/features.txt' are used to assign feature names to merged dataset. Subsequently only mean and std variables are extracted. However there are some 'meanFreq' variables present which may not be of interest removed from extracted dataset. Descriptive labels are assigned for all activities. The activity description os present in 'data/activity_labels.txt' file. Finally the merged dataset is summerized by estimating the column means for each activity for each subject. Also a 'frequency' variable is added counting the occurances of all combinations.
+### How to run the script?
+Script needs inputs mentioned below in same directory as the script. Script produces a tidy_data.txt. It may take few mins to run depending upon the system configuration.
 ### Inputs
 	'data/features.txt', 'data/activity_labels.txt', 'data/train/X_train.txt', 'data/train/y_train.txt', 'data/test/X_test.txt', 'data/test/y_test.txt', 'data/test/subject_test.txt', 'data/train/subject_train.txt'
 ### Output
